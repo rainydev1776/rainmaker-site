@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" fill="none">
+  <defs>
+    <filter id="rm_blur_80" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="80" />
+    </filter>
+
+    <pattern id="rm_dots_overlay" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#FFFFFF" fill-opacity="0.16" />
+    </pattern>
+
+    <mask id="rm_dots_right_mask">
+      <rect width="1600" height="600" fill="black" />
+      <rect x="760" y="0" width="840" height="600" fill="white" />
+    </mask>
+
+    <linearGradient id="rm_sheen" x1="540" y1="60" x2="1280" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.10" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dotted texture (right side) -->
+  <rect width="1600" height="600" fill="url(#rm_dots_overlay)" opacity="0.22" mask="url(#rm_dots_right_mask)" />
+
+  <!-- Soft cloud / film grain vibe (lighten-only bits) -->
+  <g filter="url(#rm_blur_80)" opacity="0.35">
+    <ellipse cx="1050" cy="110" rx="520" ry="190" fill="#FFFFFF" fill-opacity="0.20" />
+    <ellipse cx="980" cy="240" rx="620" ry="250" fill="#FFFFFF" fill-opacity="0.14" />
+    <ellipse cx="860" cy="190" rx="420" ry="180" fill="#FFFFFF" fill-opacity="0.10" />
+  </g>
+
+  <!-- Subtle diagonal sheen -->
+  <path d="M560 80 L1600 420 L1600 520 L560 180 Z" fill="url(#rm_sheen)" />
+
+  <!-- Tiny spark (matches the far-right glint) -->
+  <circle cx="1548" cy="260" r="3" fill="#FFFFFF" fill-opacity="0.42" />
+  <circle cx="1558" cy="270" r="2" fill="#FFFFFF" fill-opacity="0.26" />
+</svg>

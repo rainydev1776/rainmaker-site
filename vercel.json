@@ -1,0 +1,50 @@
+{
+  "redirects": [
+    {
+      "source": "/trade",
+      "destination": "/early-access",
+      "permanent": false
+    },
+    {
+      "source": "/trade/:path*",
+      "destination": "/early-access",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/auth/:path*",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/api/auth/:path*"
+    },
+    {
+      "source": "/api/me",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/api/me"
+    },
+    {
+      "source": "/api/profile",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/api/profile"
+    },
+    {
+      "source": "/api/withdraw",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/api/withdraw"
+    },
+    {
+      "source": "/api/withdraw-usdc",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/api/withdraw-usdc"
+    },
+    {
+      "source": "/api/swap-rain",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/api/swap-rain"
+    },
+    {
+      "source": "/c9/:path*",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/c9/:path*"
+    },
+    {
+      "source": "/moonpay/:path*",
+      "destination": "https://walrus-app-tddno.ondigitalocean.app/moonpay/:path*"
+    }
+  ]
+}
+
+

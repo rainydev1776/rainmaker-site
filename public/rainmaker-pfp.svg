@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="rm_pfpg" x1="30" y1="30" x2="226" y2="226" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9" />
+      <stop offset="1" stop-color="#0EE957" />
+    </linearGradient>
+    <radialGradient id="rm_pfph" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170 78) rotate(140) scale(170 170)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <circle cx="128" cy="128" r="128" fill="#0D0D0F" />
+  <circle cx="128" cy="128" r="118" fill="url(#rm_pfpg)" fill-opacity="0.22" />
+  <circle cx="170" cy="78" r="120" fill="url(#rm_pfph)" />
+  <circle cx="128" cy="128" r="108" fill="#0D0D0F" fill-opacity="0.92" />
+
+  <path
+    d="M84 190V66h58.5c18.9 0 33.7 5.1 44.4 15.3 10.7 10.2 16.1 23.5 16.1 39.9 0 12.5-3.4 23.3-10.2 32.4-6.8 9.1-16.4 15.4-28.8 18.9l35 57.5h-37.6l-30.2-52.2H121V190H84zm37-82.6h19.2c9.2 0 16.2-2.2 21-6.6 4.8-4.4 7.2-10.3 7.2-17.7 0-7.5-2.4-13.4-7.2-17.7-4.8-4.3-11.8-6.5-21-6.5H121v48.5z"
+    fill="#FFFFFF"
+    fill-opacity="0.92"
+  />
+</svg>
